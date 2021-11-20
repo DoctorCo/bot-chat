@@ -12,7 +12,7 @@ export default function ChatRoom() {
     const lastMsg = messages[messages.length - 1];
     if (lastMsg && lastMsg.uid === 1) {
       const placeHolder = {
-        id: "_" + Math.random().toString(36).substr(2, 9),
+        id: Math.random().toString(36).substr(2, 9),
         text: "thinking...",
         uid: 2,
       };
